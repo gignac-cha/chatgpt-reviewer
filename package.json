@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "build": "node build.mjs",
+    "vercel": "vercel dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +13,7 @@
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "@vercel/node": "^2.10.3",
     "esbuild": "^0.17.16",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
@@ -21,6 +21,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
     "nodemon": "^2.0.22"
   }

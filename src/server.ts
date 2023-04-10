@@ -1,4 +1,7 @@
 import fastify, { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
+import { config } from 'dotenv';
+
+config();
 
 const server: FastifyInstance = fastify({ logger: true });
 
@@ -10,4 +13,7 @@ server.all('/', (request: FastifyRequest, reply: FastifyReply) => {
   reply.send({ hello: 'world' });
 });
 
-server.listen({ port: 3000 });
+export default async (req: unknown, res: unknown) => {
+  await server.ready();
+  server.server.emit('request', req, res);
+};
