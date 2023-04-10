@@ -1,5 +1,5 @@
-import fastify, { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
 import { config } from 'dotenv';
+import fastify, { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
 
 config();
 
