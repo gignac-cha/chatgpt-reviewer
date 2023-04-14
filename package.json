@@ -23,6 +23,8 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "octokit": "^2.0.14",
+    "openai": "^3.2.1"
   }
 }
