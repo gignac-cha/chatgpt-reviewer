@@ -15,4 +15,7 @@ export default async (req: Request, res: Response) => {
   }
 
   res.json({ hello: 'world' });
+
+  const { action, number, pull_request, repository, sender } = req.body;
+  console.log(action, number, repository.full_name);
 };
