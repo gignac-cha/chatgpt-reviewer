@@ -1,7 +1,7 @@
 import { build } from 'esbuild';
 
 build({
-  entryPoints: ['src/server.ts'],
+  entryPoints: ['src/index.ts'],
   outfile: 'api/serverless.js',
   platform: 'node',
   target: 'node18',
